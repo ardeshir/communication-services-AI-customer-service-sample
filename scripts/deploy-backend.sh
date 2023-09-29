@@ -11,7 +11,7 @@ cd "$apppath" || exit
 
 # Publish the .NET project
 publishfolder="publish"
-dotnet publish "./CustomerSupportServiceSample.csproj" -o "$publishfolder"
+/root/.dotnet/dotnet publish "./CustomerSupportServiceSample.csproj" -o "$publishfolder"
 
 # Zip the published files
 (cd "$publishfolder" && zip -r ../app.zip .)

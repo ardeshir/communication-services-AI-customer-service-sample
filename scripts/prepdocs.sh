@@ -4,7 +4,7 @@ echo 'Running "PrepareDocs.dll"'
 
 pwd
 
-dotnet run --project "app/prepdocs/PrepareDocs/PrepareDocs.csproj" -- \
+/root/.dotnet/dotnet run --project "app/prepdocs/PrepareDocs/PrepareDocs.csproj" -- \
     './data/*.pdf' \
     --storageconnstring "$AZURE_STORAGE_ACCOUNT_CONNECTIONSTRING" \
     --container "$AZURE_STORAGE_CONTAINER" \
